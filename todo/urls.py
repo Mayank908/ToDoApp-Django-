@@ -11,5 +11,9 @@ urlpatterns = [
     # Mark as Undone
     path('mark_as_undone/<int:pk>/', views.mark_as_undone, name='mark_as_undone'),
 
+   # Edit task Feature
+    path('edit_task/<int:pk>/', views.edit_task, name='edit_task'),
 
+   # Delee task Feature
+    path('delete_task/<int:pk>/', views.delete_task, name='delete_task'),
 ]
